@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Auto Comment Loader",
+  "version": "1.0",
+  "description": "Automatically load all comments on a YouTube video",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch?v=*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
