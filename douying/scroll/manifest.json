@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Video Site Comment Auto-Scroller",
+    "version": "1.0",
+    "description": "Automatically scrolls comments on a video website",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.douyin.com/video/*"  
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

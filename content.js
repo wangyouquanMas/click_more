@@ -24,6 +24,11 @@ let intervalId = window.setInterval(function() {
       let showRepliesButtons = commentsSection.querySelectorAll('ytd-button-renderer#more-replies, ytd-continuation-item-renderer');
       console.log("Found", showRepliesButtons.length, '"show replies" buttons.');
 
+    
+      
+      //TOOD: store like number and replies number 
+
+
       // Filter the buttons to include only those with more than 9 replies
       let buttonsWithMoreThan9Replies = Array.from(showRepliesButtons).filter(button => {
         let buttonText = button.innerText || "";
